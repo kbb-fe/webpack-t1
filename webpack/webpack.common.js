@@ -1,10 +1,10 @@
 const Path = require('path');
-const webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const webpack = require('webpack');
 
-const { ProvidePlugin } = webpack;
+// const { ProvidePlugin } = webpack;
 
 module.exports = {
   entry: {
@@ -28,10 +28,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, '../src/index.html'),
     }),
-    new ProvidePlugin({
-      'window.React': 'react',
-      'window.ReactDOM': 'react-dom'
-    })
+    // new ProvidePlugin({
+    //   'window.React': 'react',
+    //   'window.ReactDOM': 'react-dom'
+    // })
   ],
   resolve: {
     alias: {

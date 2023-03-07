@@ -1,4 +1,3 @@
-/* globals React, ReactDOM */
 import { LikeButton } from './like-button';
 import '../styles/index.scss';
 

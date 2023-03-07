@@ -1,5 +1,3 @@
-/* globals React */
-
 const { createElement: _createElement } = React;
 const createElement =  _createElement.bind(React);
 
